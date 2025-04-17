@@ -17,6 +17,10 @@
       padding: 1.5rem;
       text-align: center;
     }
+    header img {
+      max-width: 180px;
+      margin-bottom: 0.5rem;
+    }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
@@ -35,15 +39,18 @@
     }
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
-    .course-card {
+    .course-section {
       background: #2c2c3e;
       border-radius: 12px;
-      padding: 1rem;
-      margin: 1rem 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    h2, h3 {
+      color: #ffd369;
     }
     footer {
       background: #3b2c54;
@@ -55,24 +62,79 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Music Mission Logo">
     <h1>Music Mission</h1>
     <p>Learn music anytime, anywhere</p>
   </header>
   <nav>
-    <a href="#courses">Courses</a>
+    <a href="#theory">AP Music Theory</a>
+    <a href="#appreciation">AP Music Appreciation</a>
     <a href="#contact">Contact</a>
   </nav>
-  <section id="courses">
-    <h2>Our Courses</h2>
-    <div class="course-card">
-      <h3>Intro to Piano</h3>
-      <p>Learn the basics of piano in this beginner-friendly course.</p>
-    </div>
-    <div class="course-card">
-      <h3>Guitar for Beginners</h3>
-      <p>Start your guitar journey with chords, strumming, and simple songs.</p>
-    </div>
-    <!-- Add more courses here -->
+  <section id="theory" class="course-section">
+    <h2>AP Music Theory</h2>
+    <p>This course provides a comprehensive foundation in music theory as required for AP-level studies. From basic notation to harmonic analysis, you'll learn everything you need to succeed.</p>
+    <h3>Unit 1: Music Notation</h3>
+    <ul>
+      <li>Staff, clefs, and note values</li>
+      <li>Time signatures and rhythm basics</li>
+      <li>Pitch and accidentals</li>
+    </ul>
+    <h3>Unit 2: Scales and Key Signatures</h3>
+    <ul>
+      <li>Major and minor scales</li>
+      <li>Circle of fifths</li>
+      <li>Key signature identification</li>
+    </ul>
+    <h3>Unit 3: Intervals and Chords</h3>
+    <ul>
+      <li>Simple and compound intervals</li>
+      <li>Triads and seventh chords</li>
+      <li>Roman numeral analysis</li>
+    </ul>
+    <h3>Unit 4: Harmonic Progressions</h3>
+    <ul>
+      <li>Cadences and common chord progressions</li>
+      <li>Chord inversions and voice leading</li>
+      <li>Part writing techniques</li>
+    </ul>
+    <h3>Unit 5: Form and Analysis</h3>
+    <ul>
+      <li>Binary and ternary forms</li>
+      <li>Phrase structure and musical sentences</li>
+      <li>Score reading and analysis</li>
+    </ul>
+  </section>
+  <section id="appreciation" class="course-section">
+    <h2>AP Music Appreciation</h2>
+    <p>Explore the history, genres, and cultural impact of music through the ages. This course is designed to build a deep understanding and love for music from all eras and around the world.</p>
+    <h3>Unit 1: Elements of Music</h3>
+    <ul>
+      <li>Melody, harmony, rhythm, texture</li>
+      <li>Dynamics, timbre, and form</li>
+    </ul>
+    <h3>Unit 2: Music Through the Ages</h3>
+    <ul>
+      <li>Medieval and Renaissance music</li>
+      <li>Baroque, Classical, and Romantic periods</li>
+      <li>20th century to contemporary music</li>
+    </ul>
+    <h3>Unit 3: World Music</h3>
+    <ul>
+      <li>Music traditions from Africa, Asia, and Latin America</li>
+      <li>Folk vs. classical in various cultures</li>
+    </ul>
+    <h3>Unit 4: Popular Music & Media</h3>
+    <ul>
+      <li>Jazz, rock, hip hop, electronic music</li>
+      <li>Music in film, TV, and games</li>
+      <li>Cultural and social influence of music</li>
+    </ul>
+    <h3>Unit 5: Musical Analysis and Reflection</h3>
+    <ul>
+      <li>Listening skills and guided analysis</li>
+      <li>Reflective writing and response activities</li>
+    </ul>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
