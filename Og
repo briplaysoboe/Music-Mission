@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Music Mission - Learn music anytime, anywhere!">
+  <title>Music Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e2f;
+      color: #f0f0f0;
+    }
+    header {
+      background: #3b2c54;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ffd369;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: #ffd369;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .course-card {
+      background: #2c2c3e;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    footer {
+      background: #3b2c54;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Music Mission</h1>
+    <p>Learn music anytime, anywhere</p>
+  </header>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-card">
+      <h3>Intro to Piano</h3>
+      <p>Learn the basics of piano in this beginner-friendly course.</p>
+    </div>
+    <div class="course-card">
+      <h3>Guitar for Beginners</h3>
+      <p>Start your guitar journey with chords, strumming, and simple songs.</p>
+    </div>
+    <!-- Add more courses here -->
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: musicmission@example.com</p>
+  </section>
+  <footer>
+    &copy; 2025 Music Mission. All rights reserved.
+  </footer>
+</body>
+</html>
