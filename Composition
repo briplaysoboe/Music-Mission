@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Composition - Music Mission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Music Mission</a></h1>
+        <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ap_music_theory.html">AP Music Theory</a></li>
+            <li><a href="ap_music_appreciation.html">AP Music Appreciation</a></li>
+            <li><a href="music_composition.html">Music Composition</a></li>
+            <li><a href="music_history.html">Music History</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Music Composition</h2>
+        
+        <section>
+            <h3>1. Music Theory Knowledge</h3>
+            <p>Understanding scales, chords, and harmonic functions is essential for composing music. Whether you're composing for solo instruments or full orchestra, a solid grasp of theory is crucial.</p>
+            <ul>
+                <li>Scales: Major, minor, and modal scales are the foundation of melodies.</li>
+                <li>Chords: Learn how to build triads, seventh chords, and extended chords.</li>
+                <li>Harmonic Function: Understanding how chords resolve within a key and creating tension and release.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>2. Melody Writing</h3>
+            <p>Melody writing involves creating a memorable and emotional sequence of pitches. Focus on shaping phrases that
