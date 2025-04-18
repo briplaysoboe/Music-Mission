@@ -1,0 +1,46 @@
+
+body {
+    background-color: #2e2b2b;
+    color: #f0e6d2;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d3935;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 a {
+    color: #ffe4b5;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #3d3935;
+    color: #b0a995;
+    text-align: center;
+    padding: 10px;
+}
