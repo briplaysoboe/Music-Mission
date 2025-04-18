@@ -1,0 +1,55 @@
+<!-- ap_music_appreciation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Music Appreciation - Music Mission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Music Mission</a>
+            <ul>
+                <li><a href="ap_music_theory.html">AP Music Theory</a></li>
+                <li><a href="ap_music_appreciation.html">AP Music Appreciation</a></li>
+                <li><a href="music_composition.html">Music Composition</a></li>
+                <li><a href="music_history.html">Music History</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- AP Music Appreciation Page Content -->
+    <section id="ap-music-appreciation">
+        <h1>AP Music Appreciation</h1>
+
+        <h2>Basic Elements of Music</h2>
+        <p>This section provides an overview of the key elements of music...</p>
+
+        <h3>Melody, Harmony, Rhythm</h3>
+        <p>Understanding the relationship between melody, harmony, and rhythm is key to appreciating music...</p>
+
+        <h2>Historical Periods and Styles</h2>
+        <p>Learn about different musical periods like the Renaissance, Baroque, Classical, and Modern...</p>
+
+        <h3>Classical Period</h3>
+        <p>The Classical period is marked by clarity and balance, with composers like Mozart and Haydn...</p>
+
+        <!-- Add YouTube video embed here -->
+
+        <h2>Listening Skills</h2>
+        <p>Test your ability to recognize musical forms and styles by ear...</p>
+
+        <!-- Add quiz sections -->
+        <h2>Quiz</h2>
+        <p>Complete the following quiz to test your understanding of music appreciation...</p>
+
+        <footer>
+            <p>Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
+        </footer>
+    </section>
+</body>
+</html>
