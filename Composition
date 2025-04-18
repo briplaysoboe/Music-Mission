@@ -37,4 +37,68 @@
 
         <section>
             <h3>2. Melody Writing</h3>
-            <p>Melody writing involves creating a memorable and emotional sequence of pitches. Focus on shaping phrases that
+            <p>Melody writing involves creating a memorable and emotional sequence of pitches. Focus on shaping phrases that are balanced and resonate with listeners.</p>
+            <ul>
+                <li>Phrase Structure: Use antecedent-consequent pairs, sequences, and repetition.</li>
+                <li>Contouring: Pay attention to the upward or downward movement of the melody.</li>
+                <li>Rhythmic Development: Rhythmic motifs can give a melody character and shape.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>3. Harmony and Accompaniment</h3>
+            <p>Once you have your melody, harmony provides the backdrop. Learn how to support your melody with chords and harmonic progressions.</p>
+            <ul>
+                <li>Chord Progressions: Common progressions like I-IV-V-I, ii-V-I, etc.</li>
+                <li>Accompaniment Styles: Learn how to create accompaniments using arpeggios, ostinatos, and block chords.</li>
+                <li>Textures: Explore homophonic and polyphonic textures to create depth.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>4. Orchestration and Instrumentation</h3>
+            <p>Writing for different instruments requires understanding their ranges, timbres, and technical capabilities.</p>
+            <ul>
+                <li>Instrument Ranges: Know where each instrument performs best.</li>
+                <li>Writing for Small Ensembles: Composing for duos, trios, and quartets.</li>
+                <li>Full Orchestra: Explore orchestral techniques and orchestration for a wide variety of ensembles.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>5. Musical Form</h3>
+            <p>Musical form provides the overall structure of a piece. Learn various forms such as binary, ternary, rondo, and sonata form.</p>
+            <ul>
+                <li>Binary and Ternary Forms: Understand how to structure pieces with two or three main sections.</li>
+                <li>Sonata Form: Learn how to structure movements within a symphony or sonata.</li>
+                <li>Rondo and Theme and Variations: Explore these forms for thematic development.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>6. Notation and Software</h3>
+            <p>Composing music requires being able to notate your ideas clearly. Learn how to use notation software to create professional scores.</p>
+            <ul>
+                <li>Notation Software: Explore programs like MuseScore, Finale, and Sibelius.</li>
+                <li>Score Preparation: Format and prepare your score for performance or publication.</li>
+                <li>Part Preparation: Create individual parts for each instrument in your ensemble.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>7. Analysis of Compositions</h3>
+            <p>Studying existing compositions can provide insight into effective writing techniques. Analyze works from different periods to understand how composers achieved their goals.</p>
+            <ul>
+                <li>Identify Motifs: Break down pieces into small motivic fragments.</li>
+                <li>Harmonic Language: Study the use of harmony in various genres.</li>
+                <li>Form and Structure: Understand how composers structure their pieces to create flow and coherence.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
+    </footer>
+</body>
+</html>
