@@ -1,115 +1,145 @@
-// Music Mission - Full Website Code (Single File Bundle with Account System)
-
-// === app/page.jsx ===
-import Link from "next/link";
-
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-gray-900 text-white p-6">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-blue-400 hover:underline">
-          <Link href="/">Music Mission</Link>
-        </h1>
-        <p className="mt-2 text-lg text-gray-300">
-          "Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."
-        </p>
-      </header>
-
-      <nav className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <Link href="/courses/ap-theory" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-blue-300">AP Music Theory</h2>
-          <p className="text-gray-400">College-level theory fundamentals, harmony, analysis, and more.</p>
-        </Link>
-
-        <Link href="/courses/ap-appreciation" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-blue-300">AP Music Appreciation</h2>
-          <p className="text-gray-400">Explore musical elements, history, and styles across cultures and eras.</p>
-        </Link>
-
-        <Link href="/courses/composition" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-blue-300">Music Composition</h2>
-          <p className="text-gray-400">Learn to write, arrange, and orchestrate original music with purpose.</p>
-        </Link>
-
-        <Link href="/courses/history" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-blue-300">Music History</h2>
-          <p className="text-gray-400">Study the evolution of music from medieval chants to modern genres.</p>
-        </Link>
-
-        <Link href="/courses/performance" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-blue-300">Performance</h2>
-          <p className="text-gray-400">Resources for instrumentalists: fingering charts, repair tips, best etudes.</p>
-        </Link>
-
-        <Link href="/games/vocab" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-blue-300">Vocabulary Game</h2>
-          <p className="text-gray-400">Test your music vocab knowledge with matching activities.</p>
-        </Link>
-
-        <Link href="/auth/login" className="bg-gray-800 p-6 rounded-xl shadow-md hover:bg-gray-700">
-          <h2 className="text-xl font-semibold text-green-300">Login / Register</h2>
-          <p className="text-gray-400">Access saved progress and custom experiences.</p>
-        </Link>
-      </nav>
-
-      <footer className="mt-20 text-center text-sm text-gray-500">
-        Contact: <a href="mailto:hautboisoboe10@gmail.com" className="underline">hautboisoboe10@gmail.com</a>
-      </footer>
-    </main>
-  );
-}
-
-// === Vocabulary Game Page ===
-export function VocabularyGame() {
-  const vocabList = [
-    { term: "Tempo", definition: "The speed of the beat." },
-    { term: "Dynamics", definition: "The volume of the music." },
-    { term: "Timbre", definition: "The tone color or unique quality of a sound." },
-    { term: "Harmony", definition: "The combination of simultaneously sounded musical notes." },
-    { term: "Melody", definition: "A sequence of notes that are musically satisfying." }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gray-900 text-white p-8">
-      <h1 className="text-3xl font-bold mb-6 text-blue-300">Vocabulary Match Game</h1>
-      <div className="grid grid-cols-2 gap-6">
-        {vocabList.map((item, idx) => (
-          <div key={idx} className="bg-gray-800 p-4 rounded shadow">
-            <p className="font-semibold">{item.term}</p>
-            <p className="text-gray-400 text-sm">{item.definition}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// === Authentication Pages (basic) ===
-
-export function LoginPage() {
-  return (
-    <div className="min-h-screen bg-gray-950 text-white p-8">
-      <h1 className="text-2xl font-bold mb-4 text-green-400">Login</h1>
-      <form className="flex flex-col space-y-4 max-w-sm">
-        <input type="email" placeholder="Email" className="p-2 rounded bg-gray-800 text-white" />
-        <input type="password" placeholder="Password" className="p-2 rounded bg-gray-800 text-white" />
-        <button type="submit" className="bg-green-500 p-2 rounded hover:bg-green-600">Login</button>
-        <p className="text-gray-400 text-sm">Don't have an account? <a href="/auth/register" className="underline">Register here</a>.</p>
-      </form>
-    </div>
-  );
-}
-
-export function RegisterPage() {
-  return (
-    <div className="min-h-screen bg-gray-950 text-white p-8">
-      <h1 className="text-2xl font-bold mb-4 text-green-400">Register</h1>
-      <form className="flex flex-col space-y-4 max-w-sm">
-        <input type="text" placeholder="Name" className="p-2 rounded bg-gray-800 text-white" />
-        <input type="email" placeholder="Email" className="p-2 rounded bg-gray-800 text-white" />
-        <input type="password" placeholder="Password" className="p-2 rounded bg-gray-800 text-white" />
-        <button type="submit" className="bg-green-500 p-2 rounded hover:bg-green-600">Create Account</button>
-      </form>
-    </div>
-  );
-}
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1b18;
+      color: #f0e6d2;
+    }
+    header {
+      background-color: #352f2b;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ffcb77;
+      cursor: pointer;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-style: italic;
+      font-size: 1rem;
+      color: #d4b083;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2a2623;
+      padding: 1rem;
+    }
+    nav a {
+      color: #f0e6d2;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcb77;
+    }
+    .content {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #352f2b;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 onclick="location.href='index.html'">Music Mission</h1>
+    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+  </header>  <nav>
+    <a href="ap-music-theory.html">AP Music Theory</a>
+    <a href="ap-music-appreciation.html">AP Music Appreciation</a>
+    <a href="composition.html">Music Composition</a>
+    <a href="history.html">Music History</a>
+    <a href="performance.html">Performance</a>
+  </nav>  <div class="content">
+    <h2>Welcome to Music Mission</h2>
+    <p>This is your starting point for in-depth, AP-level music education. Choose a course above to begin.</p>
+  </div>  <footer>
+    Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
+  </footer>
+</body>
+</html><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1b18;
+      color: #f0e6d2;
+    }
+    header {
+      background-color: #352f2b;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ffcb77;
+      cursor: pointer;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-style: italic;
+      font-size: 1rem;
+      color: #d4b083;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2a2623;
+      padding: 1rem;
+    }
+    nav a {
+      color: #f0e6d2;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcb77;
+    }
+    .content {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #352f2b;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 onclick="location.href='index.html'">Music Mission</h1>
+    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+  </header>  <nav>
+    <a href="ap-music-theory.html">AP Music Theory</a>
+    <a href="ap-music-appreciation.html">AP Music Appreciation</a>
+    <a href="composition.html">Music Composition</a>
+    <a href="history.html">Music History</a>
+    <a href="performance.html">Performance</a>
+  </nav>  <div class="content">
+    <h2>Welcome to Music Mission</h2>
+    <p>This is your starting point for in-depth, AP-level music education. Choose a course above to begin.</p>
+  </div>  <footer>
+    Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
+  </footer>
+</body>
+</html>
