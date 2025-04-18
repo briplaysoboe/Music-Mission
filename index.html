@@ -1,147 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Music Mission - Learn music anytime, anywhere!">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Mission</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #1e1e2f;
+      background-color: #1e1e2f;
       color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
     }
     header {
-      background: #3b2c54;
-      padding: 1.5rem;
-      text-align: center;
+      background-color: #2c1a3b;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
     }
     header img {
-      max-width: 180px;
-      margin-bottom: 0.5rem;
+      height: 60px;
+      margin-right: 1rem;
+    }
+    header div {
+      flex-grow: 1;
     }
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
       color: #ffd369;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin: 0;
     }
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      margin: 1rem 0;
+      margin: 2rem auto;
     }
-    nav a {
-      color: #ffd369;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
+    .course-card {
+      background-color: #2c2c3e;
+      border-radius: 16px;
       padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
     }
-    .course-section {
-      background: #2c2c3e;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    .course-card:hover {
+      transform: scale(1.05);
     }
-    h2, h3 {
+    .course-card h2 {
       color: #ffd369;
+    }
+    .course-card a {
+      text-decoration: none;
+      color: #ffffff;
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #3b2c54;
+      border-radius: 8px;
     }
     footer {
-      background: #3b2c54;
-      color: #aaa;
       text-align: center;
+      background-color: #2c1a3b;
+      color: #aaa;
       padding: 1rem;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Music Mission Logo">
-    <h1>Music Mission</h1>
-    <p>Learn music anytime, anywhere</p>
+    <div>
+      <h1>Music Mission</h1>
+      <p>Your free platform for learning and exploring music</p>
+    </div>
   </header>
-  <nav>
-    <a href="#theory">AP Music Theory</a>
-    <a href="#appreciation">AP Music Appreciation</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <section id="theory" class="course-section">
-    <h2>AP Music Theory</h2>
-    <p>This course provides a comprehensive foundation in music theory as required for AP-level studies. From basic notation to harmonic analysis, you'll learn everything you need to succeed.</p>
-    <h3>Unit 1: Music Notation</h3>
-    <ul>
-      <li>Staff, clefs, and note values</li>
-      <li>Time signatures and rhythm basics</li>
-      <li>Pitch and accidentals</li>
-    </ul>
-    <h3>Unit 2: Scales and Key Signatures</h3>
-    <ul>
-      <li>Major and minor scales</li>
-      <li>Circle of fifths</li>
-      <li>Key signature identification</li>
-    </ul>
-    <h3>Unit 3: Intervals and Chords</h3>
-    <ul>
-      <li>Simple and compound intervals</li>
-      <li>Triads and seventh chords</li>
-      <li>Roman numeral analysis</li>
-    </ul>
-    <h3>Unit 4: Harmonic Progressions</h3>
-    <ul>
-      <li>Cadences and common chord progressions</li>
-      <li>Chord inversions and voice leading</li>
-      <li>Part writing techniques</li>
-    </ul>
-    <h3>Unit 5: Form and Analysis</h3>
-    <ul>
-      <li>Binary and ternary forms</li>
-      <li>Phrase structure and musical sentences</li>
-      <li>Score reading and analysis</li>
-    </ul>
-  </section>
-  <section id="appreciation" class="course-section">
-    <h2>AP Music Appreciation</h2>
-    <p>Explore the history, genres, and cultural impact of music through the ages. This course is designed to build a deep understanding and love for music from all eras and around the world.</p>
-    <h3>Unit 1: Elements of Music</h3>
-    <ul>
-      <li>Melody, harmony, rhythm, texture</li>
-      <li>Dynamics, timbre, and form</li>
-    </ul>
-    <h3>Unit 2: Music Through the Ages</h3>
-    <ul>
-      <li>Medieval and Renaissance music</li>
-      <li>Baroque, Classical, and Romantic periods</li>
-      <li>20th century to contemporary music</li>
-    </ul>
-    <h3>Unit 3: World Music</h3>
-    <ul>
-      <li>Music traditions from Africa, Asia, and Latin America</li>
-      <li>Folk vs. classical in various cultures</li>
-    </ul>
-    <h3>Unit 4: Popular Music & Media</h3>
-    <ul>
-      <li>Jazz, rock, hip hop, electronic music</li>
-      <li>Music in film, TV, and games</li>
-      <li>Cultural and social influence of music</li>
-    </ul>
-    <h3>Unit 5: Musical Analysis and Reflection</h3>
-    <ul>
-      <li>Listening skills and guided analysis</li>
-      <li>Reflective writing and response activities</li>
-    </ul>
-  </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: musicmission@example.com</p>
-  </section>
+  <div class="container">
+    <div class="course-card">
+      <h2>AP Music Theory</h2>
+      <p>Master notation, harmony, and voice leading through comprehensive lessons.</p>
+      <a href="ap_music_theory.html">Start Learning</a>
+    </div>
+    <div class="course-card">
+      <h2>AP Music Appreciation</h2>
+      <p>Explore the history and cultural impact of music from around the world.</p>
+      <a href="ap_music_appreciation.html">Start Exploring</a>
+    </div>
+  </div>
   <footer>
-    &copy; 2025 Music Mission. All rights reserved.
+    Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
   </footer>
 </body>
 </html>
