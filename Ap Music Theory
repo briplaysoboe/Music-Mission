@@ -1,0 +1,120 @@
+<!-- ap-music-theory.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Music Theory - Music Mission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b2b2b;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4a3f35;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #f0f0f0;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            color: #e1b382;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #3e3128;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e1b382;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #e1b382;
+        }
+
+        .lesson {
+            margin-bottom: 15px;
+        }
+
+        .lesson h3 {
+            color: #f0f0f0;
+        }
+
+        .lesson p {
+            color: #e1b382;
+        }
+
+        footer {
+            background-color: #4a3f35;
+            padding: 20px;
+            text-align: center;
+            color: #e1b382;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html" style="color: #f0f0f0; text-decoration: none;">Music Mission</a></h1>
+    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="ap-music-theory.html">AP Music Theory</a>
+    <a href="ap-music-appreciation.html">AP Music Appreciation</a>
+    <a href="music-composition.html">Music Composition</a>
+    <a href="music-history.html">Music History</a>
+    <a href="performance.html">Performance</a>
+</nav>
+
+<div class="container">
+    <h2>AP Music Theory</h2>
+
+    <div class="lesson">
+        <h3>1. Fundamentals of Music Notation</h3>
+        <p>This section covers the basics of music notation, including clefs, note values, rests, time signatures, key signatures, and accidentals. You will also learn the Circle of Fifths, important for understanding the relationship between keys.</p>
+        <ul>
+            <li>Staff, Clefs: Treble, Bass, Alto, Tenor</li>
+            <li>Note values, rests, ties, dots</li>
+            <li>Time signatures</li>
+            <li>Key signatures and the Circle of Fifths</li>
+            <li>Accidentals: sharp, flat, natural</li>
+        </ul>
+    </div>
+
+    <!-- More lessons can be added here -->
+
+</div>
+
+<footer>
+    <p>Contact us at: <a href="mailto:hautboisoboe10@gmail.com" style="color: #e1b382;">hautboisoboe10@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
