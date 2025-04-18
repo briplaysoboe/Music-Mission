@@ -1,108 +1,120 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Mission</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
-    }
-    header, footer {
-      background-color: #1e1e1e;
-      padding: 20px;
-      text-align: center;
-    }
-    a {
-      color: #66b2ff;
-      text-decoration: none;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 20px;
-    }
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #1e1e1e;
-      border-radius: 10px;
-    }
-    h1, h2 {
-      color: #66b2ff;
-    }
-    .course-section {
-      display: none;
-    }
-    .active {
-      display: block;
-    }
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+    }header {
+  background-color: #1a1a2e;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #3a3a5c;
+}
+
+header h1 a {
+  color: #89c9b8;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #202036;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+nav a {
+  color: #a5d6c9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.page {
+  padding: 2rem;
+  display: none;
+}
+
+footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #3a3a5c;
+}
+
+.active {
+  display: block;
+}
+
   </style>
-  <script>
-    function showCourse(id) {
-      document.querySelectorAll('.course-section').forEach(s => s.classList.remove('active'));
+</head><body>
+  <header>
+    <h1><a href="#" onclick="showPage('home')">Music Mission</a></h1>
+    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+  </header>  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('theory')">AP Music Theory</a>
+    <a href="#" onclick="showPage('appreciation')">AP Music Appreciation</a>
+    <a href="#" onclick="showPage('composition')">Music Composition</a>
+    <a href="#" onclick="showPage('history')">Music History</a>
+    <a href="#" onclick="showPage('performance')">Performance</a>
+  </nav>  <main>
+    <div id="home" class="page active">
+      <h2>Welcome to Music Mission</h2>
+      <p>(This page will remain blank for now.)</p>
+    </div><div id="theory" class="page">
+  <h2>AP Music Theory</h2>
+  <p>Full in-depth lessons, examples, listening activities, quizzes, and more coming here. Each topic will be covered thoroughly.</p>
+</div>
+
+<div id="appreciation" class="page">
+  <h2>AP Music Appreciation</h2>
+  <p>Lessons focused on listening, historical context, genres, composers, and cultural musical traditions.</p>
+</div>
+
+<div id="composition" class="page">
+  <h2>Music Composition</h2>
+  <p>Creative techniques, orchestration, software, form, and detailed examples to help you compose.</p>
+</div>
+
+<div id="history" class="page">
+  <h2>Music History</h2>
+  <p>Explore Western and world music history from medieval times to modern genres like jazz and pop.</p>
+</div>
+
+<div id="performance" class="page">
+  <h2>Performance</h2>
+  <ul>
+    <li>Fingering charts</li>
+    <li>Instrument repair tips</li>
+    <li>Reed-making tips</li>
+    <li>Etude book recommendations</li>
+    <li>Technique and playing tips for all instruments</li>
+  </ul>
+</div>
+
+  </main>  <footer>
+    Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
+  </footer>  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
-  </script>
-</head>
-<body>
-  <header>
-    <h1><a href="#" onclick="showCourse('home')">Music Mission</a></h1>
-    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
-    <nav>
-      <a href="#" onclick="showCourse('home')">Home</a>
-      <a href="#" onclick="showCourse('ap-theory')">AP Music Theory</a>
-      <a href="#" onclick="showCourse('ap-appreciation')">AP Music Appreciation</a>
-      <a href="#" onclick="showCourse('composition')">Music Composition</a>
-      <a href="#" onclick="showCourse('history')">Music History</a>
-      <a href="#" onclick="showCourse('performance')">Performance</a>
-    </nav>
-  </header>  <section id="home" class="course-section active">
-    <h2>Welcome to Music Mission</h2>
-    <p>This is your go-to platform for in-depth, focused music education. Select a course above to begin.</p>
-  </section>  <section id="ap-theory" class="course-section">
-    <h2>AP Music Theory</h2>
-    <p><strong>Course Overview:</strong> This course explores music notation, harmony, voice leading, analysis, and aural skills. Below are full-length lessons.</p><h3>1. Fundamentals of Music Notation</h3>
-<p><strong>Lesson:</strong> The staff consists of five lines and four spaces. Notes are placed on the staff to indicate pitch. The treble clef (G clef), bass clef (F clef), alto and tenor clefs help us locate notes. Ledger lines extend the staff above or below. Enharmonic equivalents are notes that sound the same but are written differently (e.g., C# and Db).</p>
-<p><strong>Watch:</strong> <a href="https://www.youtube.com/watch?v=9Fc0r2RkF5M" target="_blank">Music Notation Basics (YouTube)</a></p>
-
-<h3>2. Rhythm and Meter</h3>
-<p><strong>Lesson:</strong> Rhythmic values include whole, half, quarter, eighth, and sixteenth notes and rests. Time signatures indicate beats per measure and beat value. Simple meters divide beats into two, compound into three, and irregular meters vary. Syncopation, ties, dots, and tuplets modify rhythm.</p>
-<p><strong>Watch:</strong> <a href="https://www.youtube.com/watch?v=9-Yjm9TUr-E" target="_blank">Understanding Rhythm and Meter</a></p>
-
-<h3>3. Scales and Modes</h3>
-<p><strong>Lesson:</strong> Scales are collections of pitches arranged in ascending or descending order. Major scales follow the W-W-H-W-W-W-H pattern. Minor scales include natural, harmonic, and melodic forms. Modes include Dorian, Phrygian, Lydian, etc. Learn the circle of fifths for key relationships.</p>
-
-<h3>4. Intervals</h3>
-<p><strong>Lesson:</strong> Intervals are the distances between two notes. Simple intervals are within one octave; compound intervals extend beyond. Learn to identify perfect, major, minor, augmented, and diminished intervals and their inversions.</p>
-
-<!-- More lessons coming next -->
-
-  </section>  <section id="ap-appreciation" class="course-section">
-    <h2>AP Music Appreciation</h2>
-    <p>Lessons will be added after AP Theory is completed.</p>
-  </section>  <section id="composition" class="course-section">
-    <h2>Music Composition</h2>
-    <p>Lessons will be added after AP Music Appreciation is completed.</p>
-  </section>  <section id="history" class="course-section">
-    <h2>Music History</h2>
-    <p>Lessons will be added after Music Composition is completed.</p>
-  </section>  <section id="performance" class="course-section">
-    <h2>Performance Resources</h2>
-    <ul>
-      <li>Fingering charts for all instruments</li>
-      <li>Trill charts for woodwinds and brass</li>
-      <li>Instrument care and repair tips</li>
-      <li>Reed making guides for oboe, bassoon, clarinet</li>
-      <li>Best etudes and solo books per instrument</li>
-      <li>Tips for tone, articulation, intonation, and technique</li>
-    </ul>
-  </section>  <footer>
-    <p>Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
-  </footer>
-</body>
-</html>
+  </script></body></html>
