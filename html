@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a1d3b;
+      color: #f4f4f4;
+    }
+    header {
+      background-color: #07162c;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #12294d;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #1a3a6d;
+    }
+    section {
+      display: none;
+      padding: 20px;
+    }
+    section.active {
+      display: block;
+    }
+    .lesson {
+      margin-bottom: 40px;
+    }
+    h1, h2, h3 {
+      color: #e0e6f0;
+    }
+    .caption {
+      font-size: 1.2em;
+      font-style: italic;
+      margin-top: 10px;
+    }
+    audio, video {
+      display: block;
+      margin-top: 10px;
+    }
+    .quiz {
+      background: #12294d;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Music Mission</h1>
+    <p class="caption">"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('theory')">AP Music Theory</a>
+    <a href="#" onclick="showSection('appreciation')">AP Music Appreciation</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Welcome to Music Mission</h2>
+    <p>Select a course above to begin your journey in music learning.</p>
+  </section>
+
+  <section id="theory">
+    <h2>AP Music Theory</h2>
+
+    <div class="lesson">
+      <h3>I. Music Fundamentals</h3>
+
+      <h4>A. Notation & Pitch</h4>
+      <p>Music is written on a staff made up of five lines and four spaces. Notes are placed on these lines and spaces to indicate pitch. The clef determines what pitch is represented by each line and space.</p>
+      <ul>
+        <li><strong>Treble Clef:</strong> Common for higher-pitched instruments and voices (G clef).</li>
+        <li><strong>Bass Clef:</strong> Used for lower-pitched instruments and voices (F clef).</li>
+        <li><strong>Alto and Tenor Clefs:</strong> Used for instruments like the viola (C clefs).</li>
+      </ul>
+      <p><strong>Enharmonic Equivalents:</strong> Notes that sound the same but are written differently, like C# and Db.</p>
+      <p><strong>Ledger Lines:</strong> Short lines added above or below the staff to accommodate pitches that exceed the normal range.</p>
+      <audio controls src="audio/clefs_example.mp3">Your browser does not support the audio element.</audio>
+      <div class="quiz">
+        <h4>Quick Quiz:</h4>
+        <p>What clef is commonly used for viola?</p>
+        <ul>
+          <li>A) Treble Clef</li>
+          <li>B) Bass Clef</li>
+          <li><strong>C) Alto Clef</strong></li>
+          <li>D) Tenor Clef</li>
+        </ul>
+        <p><em>Answer: C) Alto Clef – it's centered on middle C and used by violas.</em></p>
+      </div>
+
+      <h4>B. Rhythm & Meter</h4>
+      <p>Rhythm is the organization of sound in time. Meter organizes beats into regular groupings, usually shown by a time signature.</p>
+      <ul>
+        <li><strong>Note and Rest Values:</strong> Whole, half, quarter, eighth, sixteenth, etc.</li>
+        <li><strong>Time Signatures:</strong> Top number = beats per measure; Bottom number = note value that gets the beat.</li>
+        <li><strong>Simple Meter:</strong> Beats divide into twos (e.g., 2/4, 3/4, 4/4).</li>
+        <li><strong>Compound Meter:</strong> Beats divide into threes (e.g., 6/8, 9/8).</li>
+        <li><strong>Irregular Meter:</strong> Uneven groupings (e.g., 5/8, 7/8).</li>
+        <li><strong>Syncopation:</strong> Emphasis on off-beats or weak parts of the beat.</li>
+        <li><strong>Ties and Dots:</strong> Extend the duration of a note.</li>
+      </ul>
+      <audio controls src="audio/rhythm_examples.mp3">Your browser does not support the audio element.</audio>
+      <div class="quiz">
+        <h4>Quick Quiz:</h4>
+        <p>Which time signature represents compound meter?</p>
+        <ul>
+          <li>A) 4/4</li>
+          <li><strong>B) 6/8</strong></li>
+          <li>C) 3/4</li>
+          <li>D) 2/4</li>
+        </ul>
+        <p><em>Answer: B) 6/8 – beats divide into three, making it compound.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="appreciation">
+    <h2>AP Music Appreciation</h2>
+    <!-- Music Appreciation content will go here after Theory is complete -->
+  </section>
+</body>
+</html>
