@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music History - Music Mission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Music Mission</a></h1>
+        <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ap_music_theory.html">AP Music Theory</a></li>
+            <li><a href="ap_music_appreciation.html">AP Music Appreciation</a></li>
+            <li><a href="music_composition.html">Music Composition</a></li>
+            <li><a href="music_history.html">Music History</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Music History</h2>
+
+        <section>
+            <h3>1. Periods of Western Music</h3>
+            <p>Learn the major periods of Western music history, from the Medieval to the Contemporary era.</p>
+            <ul>
+                <li><strong>Medieval (500–1400):</strong> Chant, organum, early notation.</li>
+                <li><strong>Renaissance (1400–1600):</strong> Imitative polyphony, secular music.</li>
+                <li><strong>Baroque (1600–1750):</strong> Birth of opera, concerto grosso, fugue.</li>
+                <li><strong>Classical (1750–1820):</strong> Clarity, balance, sonata form.</li>
+                <li><strong>Romantic (1820–1900):</strong> Expression, expanded orchestra, program music.</li>
+                <li><strong>Modern/Contemporary (1900–present):</strong> Atonality, minimalism, electronic music.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>2. Key Composers by Era</h3>
+            <p>Familiarize yourself with the great composers from each historical period:</p>
+            <ul>
+                <li>Bach, Handel, Vivaldi (Baroque)</li>
+                <li>Mozart, Haydn, Beethoven (Classical)</li>
+                <li>Schumann, Chopin, Verdi, Brahms (Romantic)</li>
+                <li>Stravinsky, Debussy, Schoenberg, Copland (Modern)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>3. Musical Innovations</h3>
+            <p>Explore the major innovations in music and how they have shaped the way music is composed and performed.</p>
+            <ul>
+                <li>Development of Notation: From neumes to modern staff notation.</li>
+                <li>Instrument Innovations: The evolution of orchestral instruments.</li>
+                <li>Changes in Tuning Systems: Understanding equal temperament and just intonation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>4. Historical Context</h3>
+            <p>Understand how music reflects and influences society, politics, and religion.</p>
+            <ul>
+                <li>Music in Politics: Role of music in revolutions and movements.</li>
+                <li>Patronage: How composers were supported by kings, courts, and institutions.</li>
+                <li>Music and Culture: Music's role in cultural identity and movements (Renaissance humanism, etc.).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>5. World and Popular Music Influences</h3>
+            <p>Explore how folk, jazz, and popular music intersect with classical traditions.</p>
+            <ul>
+                <li>Folk Music: The influence of folk traditions on classical compositions.</li>
+                <li>Jazz, Rock, and Pop: 20th-century movements and their crossover with classical music.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
+    </footer>
+</body>
+</html>
