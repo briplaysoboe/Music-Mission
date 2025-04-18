@@ -1,120 +1,74 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Music Mission</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f0f0f;
-      color: #e0e0e0;
+      background-color: #1e1b18;
+      color: #f2e9dc;
     }header {
-  background-color: #1a1a2e;
-  padding: 2rem;
+  background-color: #3b2f2f;
+  padding: 1rem;
   text-align: center;
-  border-bottom: 3px solid #3a3a5c;
 }
 
 header h1 a {
-  color: #89c9b8;
+  color: #f7c59f;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 header p {
   font-style: italic;
-  margin-top: 1rem;
-  color: #ccc;
+  color: #e0b089;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  background-color: #202036;
-  padding: 1rem;
-  gap: 1rem;
+  background-color: #2a2421;
 }
 
 nav a {
-  color: #a5d6c9;
+  color: #f2e9dc;
+  padding: 1rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #ffffff;
-}
-
-.page {
-  padding: 2rem;
-  display: none;
+  background-color: #4a3f3f;
 }
 
 footer {
-  background-color: #1a1a2e;
-  color: #ccc;
   text-align: center;
   padding: 1rem;
-  margin-top: 3rem;
-  border-top: 2px solid #3a3a5c;
-}
-
-.active {
-  display: block;
+  background-color: #3b2f2f;
+  color: #c9ada7;
 }
 
   </style>
-</head><body>
+</head>
+<body>
   <header>
-    <h1><a href="#" onclick="showPage('home')">Music Mission</a></h1>
+    <h1><a href="index.html">Music Mission</a></h1>
     <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
-  </header>  <nav>
-    <a href="#" onclick="showPage('home')">Home</a>
-    <a href="#" onclick="showPage('theory')">AP Music Theory</a>
-    <a href="#" onclick="showPage('appreciation')">AP Music Appreciation</a>
-    <a href="#" onclick="showPage('composition')">Music Composition</a>
-    <a href="#" onclick="showPage('history')">Music History</a>
-    <a href="#" onclick="showPage('performance')">Performance</a>
-  </nav>  <main>
-    <div id="home" class="page active">
-      <h2>Welcome to Music Mission</h2>
-      <p>(This page will remain blank for now.)</p>
-    </div><div id="theory" class="page">
-  <h2>AP Music Theory</h2>
-  <p>Full in-depth lessons, examples, listening activities, quizzes, and more coming here. Each topic will be covered thoroughly.</p>
-</div>
-
-<div id="appreciation" class="page">
-  <h2>AP Music Appreciation</h2>
-  <p>Lessons focused on listening, historical context, genres, composers, and cultural musical traditions.</p>
-</div>
-
-<div id="composition" class="page">
-  <h2>Music Composition</h2>
-  <p>Creative techniques, orchestration, software, form, and detailed examples to help you compose.</p>
-</div>
-
-<div id="history" class="page">
-  <h2>Music History</h2>
-  <p>Explore Western and world music history from medieval times to modern genres like jazz and pop.</p>
-</div>
-
-<div id="performance" class="page">
-  <h2>Performance</h2>
-  <ul>
-    <li>Fingering charts</li>
-    <li>Instrument repair tips</li>
-    <li>Reed-making tips</li>
-    <li>Etude book recommendations</li>
-    <li>Technique and playing tips for all instruments</li>
-  </ul>
-</div>
-
-  </main>  <footer>
+  </header>
+  <nav>
+    <a href="ap-music-theory.html">AP Music Theory</a>
+    <a href="ap-music-appreciation.html">AP Music Appreciation</a>
+    <a href="music-composition.html">Music Composition</a>
+    <a href="music-history.html">Music History</a>
+    <a href="performance.html">Performance</a>
+  </nav>
+  <main>
+    <!-- Home page content can go here -->
+  </main>
+  <footer>
     Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
-  </footer>  <script>
-    function showPage(id) {
-      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script></body></html>
+  </footer>
+</body>
+</html>
