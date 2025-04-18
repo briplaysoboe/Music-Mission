@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Music Mission</a>
+            <ul>
+                <li><a href="ap_music_theory.html">AP Music Theory</a></li>
+                <li><a href="ap_music_appreciation.html">AP Music Appreciation</a></li>
+                <li><a href="music_composition.html">Music Composition</a></li>
+                <li><a href="music_history.html">Music History</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page Content -->
+    <section id="home">
+        <h1>Music Mission</h1>
+        <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
