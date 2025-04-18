@@ -1,192 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Music Mission</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #1c1c1c;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Theory & Appreciation</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-      background-color: #2a2a2a;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #444;
-    }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
 
-    header h1 a {
-      color: #f0f0f0;
-      text-decoration: none;
-      font-size: 2.5rem;
-    }
+        header img {
+            width: 150px;
+        }
 
-    header p {
-      font-style: italic;
-      color: #ccc;
-    }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    nav {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-    }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
 
-    nav a {
-      color: #bbb;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+        nav ul li a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-    nav a:hover {
-      color: #fff;
-    }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
 
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      border-bottom: 2px solid #555;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    footer {
-      background-color: #222;
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-      margin-top: 40px;
-      border-top: 2px solid #444;
-    }
-
-    .course {
-      margin-bottom: 40px;
-    }
-
-    input, button {
-      padding: 10px;
-      margin: 5px;
-      border-radius: 5px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    input[type="email"] {
-      width: 250px;
-    }
-
-    .form {
-      background-color: #2a2a2a;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px auto;
-      width: fit-content;
-      box-shadow: 0 0 10px rgba(255,255,255,0.05);
-    }
-
-  </style>
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#theory">Music Theory</a></li>
+                <li><a href="#appreciation">Music Appreciation</a></li>
+                <li><a href="#theory-quiz">Theory Quiz</a></li>
+                <li><a href="#appreciation-quiz">Appreciation Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the Music Learning Platform</h1>
+        <p>Explore lessons on Music Theory and Music Appreciation.</p>
 
-  <header>
-    <h1><a href="#">Music Mission</a></h1>
-    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
-  </header>
+        <section id="theory">
+            <h2>Music Theory Lesson</h2>
+            <p>This lesson covers the fundamentals of music theory, including notation, rhythm, scales, and intervals.</p>
+            <h3>Notation & Pitch</h3>
+            <p>Learn about the staff, clefs, note names, and more.</p>
+            <h3>Rhythm & Meter</h3>
+            <p>Understand note/rest values, time signatures, and rhythmic patterns.</p>
+            <h3>Scales & Key Signatures</h3>
+            <p>Explore major and minor scales, modes, and key signatures.</p>
+            <h3>Intervals</h3>
+            <p>Identify and construct intervals, and understand their qualities.</p>
+        </section>
 
-  <nav>
-    <a href="#theory">AP Music Theory</a>
-    <a href="#appreciation">AP Music Appreciation</a>
-    <a href="#composition">Music Composition</a>
-    <a href="#history">Music History</a>
-    <a href="#performance">Performance</a>
-  </nav>
+        <section id="appreciation">
+            <h2>Music Appreciation Lesson</h2>
+            <p>This lesson explores the history and elements of music appreciation.</p>
+            <h3>Historical Context</h3>
+            <p>Learn about the evolution of music through different periods.</p>
+            <h3>Musical Elements</h3>
+            <p>Understand the components that make up a musical piece.</p>
+            <h3>Listening Skills</h3>
+            <p>Develop the ability to analyze and appreciate music critically.</p>
+        </section>
 
-  <div class="form">
-    <h3>Create Account / Login</h3>
-    <form>
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+        <section id="theory-quiz">
+            <h2>Music Theory Quiz</h2>
+            <p>Test your knowledge on music theory concepts.</p>
+            <button onclick="startTheoryQuiz()">Start Quiz</button>
+            <div id="theory-quiz-container" style="display:none;">
+                <!-- Quiz content will be dynamically inserted here -->
+            </div>
+        </section>
 
-  <section id="theory" class="course">
-    <h2>AP Music Theory</h2>
-    <ul>
-      <li><strong>Fundamentals of Music Notation:</strong> Staff, clefs (treble, bass, alto, tenor), note values, rests, ties, dots, time signatures (simple, compound, irregular), key signatures and the circle of fifths, accidentals</li>
-      <li><strong>Scales and Modes:</strong> Major, minor (natural, harmonic, melodic), chromatic, whole tone, and church modes (Dorian, Phrygian, etc.)</li>
-      <li><strong>Intervals:</strong> Naming, simple vs compound, inversion, enharmonic equivalents</li>
-      <li><strong>Chords and Harmony:</strong> Triads and seventh chords, roman numeral analysis, figured bass, lead sheet symbols</li>
-      <li><strong>Voice Leading and Part Writing:</strong> SATB, inversions, doubling, resolving dissonance, avoiding parallels</li>
-      <li><strong>Harmonic Progressions:</strong> Common progressions, cadences, non-chord tones (passing, neighbor, suspensions, etc.)</li>
-      <li><strong>Form and Analysis:</strong> Binary, ternary, rondo, sonata, phrase structures, motives, sequences</li>
-      <li><strong>Aural Skills:</strong> Interval/chord recognition, melodic/rhythmic dictation, sight singing</li>
-      <li><strong>Composition and Realization:</strong> Figured bass realization and writing short compositions</li>
-    </ul>
-  </section>
+        <section id="appreciation-quiz">
+            <h2>Music Appreciation Quiz</h2>
+            <p>Test your understanding of music appreciation.</p>
+            <button onclick="startAppreciationQuiz()">Start Quiz</button>
+            <div id="appreciation-quiz-container" style="display:none;">
+                <!-- Quiz content will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Music Learning Platform</p>
+    </footer>
 
-  <section id="appreciation" class="course">
-    <h2>AP Music Appreciation</h2>
-    <ul>
-      <li><strong>Elements of Music:</strong> Melody, harmony, rhythm, texture, form, dynamics, timbre, notation, instruments, and voice types</li>
-      <li><strong>Historical Periods:</strong> Middle Ages (chant), Renaissance (polyphony), Baroque (fugue, opera), Classical (form, clarity), Romantic (emotion, nationalism), Modern (atonality, jazz)</li>
-      <li><strong>World Music:</strong> African drumming, Indian raga, Gamelan, Native American music</li>
-      <li><strong>Music in Society:</strong> Religion, politics, entertainment, cultural function</li>
-      <li><strong>Listening Skills:</strong> Form/style recognition, instrument identification</li>
-    </ul>
-  </section>
+    <script>
+        // JavaScript Functions
 
-  <section id="composition" class="course">
-    <h2>Music Composition</h2>
-    <ul>
-      <li><strong>Theory Foundations:</strong> Scales, chords, harmonic function, rhythm, counterpoint</li>
-      <li><strong>Melody Writing:</strong> Motivic development, repetition, phrase structures, contour</li>
-      <li><strong>Harmony/Accompaniment:</strong> Progressions, cadences, substitutions, textures</li>
-      <li><strong>Orchestration:</strong> Instrument ranges, transposition, ensemble writing</li>
-      <li><strong>Form:</strong> Binary, ternary, rondo, variations, sonata, film/game music structures</li>
-      <li><strong>Software:</strong> MuseScore, Sibelius, Finale, formatting scores and parts</li>
-      <li><strong>Analysis:</strong> Understanding structure, motifs, harmonic analysis</li>
-    </ul>
-  </section>
+        function startTheoryQuiz() {
+            const quizContainer = document.getElementById('theory-quiz-container');
+            quizContainer.style.display = 'block';
+            quizContainer.innerHTML = `
+                <h3>Question 1: What is the time signature of a 4/4 measure?</h3>
+                <button onclick="alert('Correct!')">4 beats per measure</button>
+                <button onclick="alert('Incorrect. Try again.')">3 beats per measure</button>
+                <button onclick="alert('Incorrect. Try again.')">5 beats per measure</button>
+            `;
+        }
 
-  <section id="history" class="course">
-    <h2>Music History</h2>
-    <ul>
-      <li><strong>Western Periods:</strong> Medieval (chant, organum), Renaissance (polyphony), Baroque (opera, concerto), Classical (clarity, form), Romantic (emotion, program music), Modern (minimalism, electronic)</li>
-      <li><strong>Key Composers:</strong> Bach, Handel, Vivaldi, Mozart, Haydn, Beethoven, Chopin, Verdi, Brahms, Debussy, Stravinsky, Schoenberg, Copland</li>
-      <li><strong>Innovations:</strong> Instrument evolution, notation systems, tuning systems</li>
-      <li><strong>Context:</strong> Music and politics, religion, culture, patronage, Renaissance humanism</li>
-      <li><strong>Popular & World Influence:</strong> Folk music, jazz, rock, pop, genre crossover</li>
-    </ul>
-  </section>
-
-  <section id="performance" class="course">
-    <h2>Performance Resources</h2>
-    <ul>
-      <li><strong>Instrument Charts:</strong> Fingering charts and trill charts (if applicable)</li>
-      <li><strong>Maintenance:</strong> Instrument repair tips, cleaning, reed making (for woodwinds)</li>
-      <li><strong>Etude Books & Literature:</strong> Best etudes and solo pieces for each instrument</li>
-      <li><strong>Technique:</strong> Tone production, posture, embouchure, articulation tips</li>
-    </ul>
-  </section>
-
-  <footer>
-    Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
-  </footer>
-
+        function startAppreciationQuiz() {
+            const quizContainer = document.getElementById('appreciation-quiz-container');
+            quizContainer.style.display = 'block';
+            quizContainer.innerHTML = `
+                <h3>Question 1: Which period is known for the development of opera?</h3>
+                <button onclick="alert('Correct!')">Baroque</button>
+                <button onclick="alert('Incorrect. Try again.')">Classical</button>
+                <button onclick="alert('Incorrect. Try again.')">Romantic</button>
+            `;
+        }
+    </script>
 </body>
 </html>
