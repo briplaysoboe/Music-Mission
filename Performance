@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance - Music Mission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Music Mission</a></h1>
+        <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ap_music_theory.html">AP Music Theory</a></li>
+            <li><a href="ap_music_appreciation.html">AP Music Appreciation</a></li>
+            <li><a href="music_composition.html">Music Composition</a></li>
+            <li><a href="music_history.html">Music History</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Performance Resources</h2>
+
+        <section>
+            <h3>1. Instrument Fingering Charts</h3>
+            <p>Get detailed fingering charts for all instruments to help guide your practice.</p>
+            <ul>
+                <li><a href="#">Flute Fingering Chart</a></li>
+                <li><a href="#">Clarinet Fingering Chart</a></li>
+                <li><a href="#">Trumpet Fingering Chart</a></li>
+                <li><a href="#">Piano Fingering Guide</a></li>
+                <li><a href="#">String Instruments (Violin, Viola, Cello, Bass)</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>2. Warm-up and Technique Routines</h3>
+            <p>Daily routines to help maintain and improve your technique on your instrument.</p>
+            <ul>
+                <li>Long Tones for Winds</li>
+                <li>Scales and Arpeggios</li>
+                <li>Technical Etudes and Exercises</li>
+                <li>Rhythmic Drills and Articulation Studies</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>3. Practice Strategies</h3>
+            <p>Effective techniques for improving your practice time and results.</p>
+            <ul>
+                <li>Slow Practice with Metronome</li>
+                <li>Looping Difficult Passages</li>
+                <li>Goal-Oriented Practice Sessions</li>
+                <li>Recording and Self-Assessment</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>4. Repertoire Suggestions</h3>
+            <p>Suggested solo and ensemble pieces by level to expand your performance skills.</p>
+            <ul>
+                <li>Beginner to Intermediate Solos</li>
+                <li>Ensemble Music for Duets, Trios, Quartets</li>
+                <li>Concertos and Advanced Literature</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>5. Performance Preparation</h3>
+            <p>Tips and guidance for recitals, competitions, and live concerts.</p>
+            <ul>
+                <li>Stage Presence and Body Language</li>
+                <li>Mock Performances and Visualization</li>
+                <li>Handling Stage Fright and Performance Anxiety</li>
+                <li>Checklists for Concert Day</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>6. Instrument Care and Maintenance</h3>
+            <p>Learn how to properly care for and maintain your instrument for peak performance.</p>
+            <ul>
+                <li>Cleaning and Storage Tips</li>
+                <li>Routine Maintenance for Woodwinds, Brass, and Strings</li>
+                <li>When to Seek Professional Repair</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
+    </footer>
+</body>
+</html>
