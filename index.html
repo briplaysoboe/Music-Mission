@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Music Mission</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Music Mission</a></h1>
+        <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+        <nav>
+            <ul>
+                <li><a href="theory.html">AP Music Theory</a></li>
+                <li><a href="appreciation.html">AP Music Appreciation</a></li>
+                <li><a href="composition.html">Music Composition</a></li>
+                <li><a href="history.html">Music History</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Welcome to Music Mission. Select a course to begin learning!</p>
+    </main>
+    <footer>
+        <p>Contact: hautboisoboe10@gmail.com</p>
+    </footer>
+</body>
+</html>
+
+body {
+    background-color: #2e2b2b;
+    color: #f0e6d2;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d3935;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 a {
+    color: #ffe4b5;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #3d3935;
+    color: #b0a995;
+    text-align: center;
+    padding: 10px;
+}
+
+with open(os.path.join(base_dir, "index.html"), "w") as f:
+    f.write(index_html)
+
+with open(os.path.join(base_dir, "styles.css"), "w") as f:
+    f.write(styles_css)
+
+zip_path = "/mnt/data/music-mission.zip"
+with ZipFile(zip_path, "w") as zipf:
+    for foldername, subfolders, filenames in os.walk(base_dir):
+        for filename in filenames:
+            filepath = os.path.join(foldername, filename)
+            arcname = os.path.relpath(filepath, base_dir)
+            zipf.write(filepath, arcname)
