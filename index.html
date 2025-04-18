@@ -1,48 +1,76 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Music Mission</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Music Theory - Music Mission</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #0b1f33; /* deep navy blue */
+      background-color: #0b1f33;
       color: #f0f0f0;
       font-family: sans-serif;
     }
-    a {
+    h2, h3 {
       color: #80d0ff;
     }
     .section {
       padding: 2rem;
     }
-    .course-section {
-      margin-bottom: 3rem;
+    .lesson {
+      margin-bottom: 2rem;
+      background: #132c47;
+      padding: 1rem;
+      border-radius: 0.5rem;
     }
   </style>
 </head>
 <body>
   <header class="text-center py-6 bg-blue-900">
-    <h1 class="text-4xl font-bold">Music Mission</h1>
-    <p class="mt-2 text-lg italic">"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+    <h1 class="text-4xl font-bold">AP Music Theory</h1>
+    <p class="text-lg mt-2 italic">Master the core principles of music structure and composition.</p>
   </header>  <nav class="flex justify-center space-x-8 py-4 bg-blue-800">
-    <a href="#theory" class="hover:underline">AP Music Theory</a>
-    <a href="#appreciation" class="hover:underline">AP Music Appreciation</a>
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="theory.html" class="hover:underline font-bold">AP Music Theory</a>
+    <a href="appreciation.html" class="hover:underline">AP Music Appreciation</a>
   </nav>  <main class="section">
-    <section id="theory" class="course-section">
-      <h2 class="text-3xl font-semibold border-b-2 border-blue-500 pb-2">AP Music Theory</h2>
-      <!-- Music Theory Lessons (Topics I–VIII) inserted here dynamically -->
-      <div id="theory-lessons">
-        <!-- In-depth lessons are being added progressively -->
-        <p class="mt-4 text-lg">Full AP Music Theory course content coming in. Currently 95% complete. Includes fundamentals, harmony, texture, form, aural skills, composition, and score interpretation with quizzes and YouTube audio.</p>
+    <section class="lesson">
+      <h2 class="text-2xl font-semibold mb-2">I. Music Fundamentals</h2>
+      <div>
+        <h3 class="text-xl font-bold">A. Notation & Pitch</h3>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Staff, clefs (treble, bass, alto, tenor)</li>
+          <li>Note names and placement</li>
+          <li>Enharmonic equivalents</li>
+          <li>Ledger lines</li>
+        </ul>
       </div>
-    </section><section id="appreciation" class="course-section">
-  <h2 class="text-3xl font-semibold border-b-2 border-blue-500 pb-2">AP Music Appreciation</h2>
-  <div id="appreciation-lessons">
-    <p class="mt-4 text-lg">Lessons on music history, genres, movements, and influential composers will appear here. Work in progress — currently 50% complete with YouTube listening examples and lesson outlines.</p>
-  </div>
-</section>
-
+      <div class="mt-4">
+        <h3 class="text-xl font-bold">B. Rhythm & Meter</h3>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Note/rest values</li>
+          <li>Simple, compound, and irregular meters</li>
+          <li>Time signatures (including changing meters)</li>
+          <li>Triplets, duplets, syncopation, ties, and dots</li>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <h3 class="text-xl font-bold">C. Scales & Key Signatures</h3>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Major and minor scales (natural, harmonic, melodic)</li>
+          <li>Modes (Dorian, Phrygian, Lydian, etc.)</li>
+          <li>Circle of fifths</li>
+          <li>Relative and parallel keys</li>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <h3 class="text-xl font-bold">D. Intervals</h3>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Identification and construction</li>
+          <li>Quality (major, minor, perfect, augmented, diminished)</li>
+          <li>Inversion of intervals</li>
+        </ul>
+      </div>
+    </section>
   </main>  <footer class="text-center py-6 bg-blue-900 text-sm">
     Contact us: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
   </footer>
