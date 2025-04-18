@@ -2,144 +2,191 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Music Mission</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0a1d3b;
-      color: #f4f4f4;
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #07162c;
+      background-color: #2a2a2a;
       padding: 20px;
       text-align: center;
+      border-bottom: 2px solid #444;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #12294d;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
+
+    header h1 a {
+      color: #f0f0f0;
       text-decoration: none;
-      display: inline-block;
+      font-size: 2.5rem;
     }
+
+    header p {
+      font-style: italic;
+      color: #ccc;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
     nav a:hover {
-      background-color: #1a3a6d;
+      color: #fff;
     }
+
     section {
-      display: none;
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    section.active {
-      display: block;
+
+    h2 {
+      border-bottom: 2px solid #555;
+      padding-bottom: 5px;
+      margin-top: 40px;
     }
-    .lesson {
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      margin-top: 40px;
+      border-top: 2px solid #444;
+    }
+
+    .course {
       margin-bottom: 40px;
     }
-    h1, h2, h3 {
-      color: #e0e6f0;
-    }
-    .caption {
-      font-size: 1.2em;
-      font-style: italic;
-      margin-top: 10px;
-    }
-    audio, video {
-      display: block;
-      margin-top: 10px;
-    }
-    .quiz {
-      background: #12294d;
+
+    input, button {
       padding: 10px;
-      border-radius: 8px;
-      margin-top: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
     }
+
+    input[type="email"] {
+      width: 250px;
+    }
+
+    .form {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: fit-content;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+
   </style>
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </head>
 <body>
+
   <header>
-    <h1>Music Mission</h1>
-    <p class="caption">"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+    <h1><a href="#">Music Mission</a></h1>
+    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
   </header>
 
   <nav>
-    <a href="#" onclick="showSection('home')">Home</a>
-    <a href="#" onclick="showSection('theory')">AP Music Theory</a>
-    <a href="#" onclick="showSection('appreciation')">AP Music Appreciation</a>
+    <a href="#theory">AP Music Theory</a>
+    <a href="#appreciation">AP Music Appreciation</a>
+    <a href="#composition">Music Composition</a>
+    <a href="#history">Music History</a>
+    <a href="#performance">Performance</a>
   </nav>
 
-  <section id="home" class="active">
-    <h2>Welcome to Music Mission</h2>
-    <p>Select a course above to begin your journey in music learning.</p>
-  </section>
+  <div class="form">
+    <h3>Create Account / Login</h3>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
-  <section id="theory">
+  <section id="theory" class="course">
     <h2>AP Music Theory</h2>
-
-    <div class="lesson">
-      <h3>I. Music Fundamentals</h3>
-
-      <h4>A. Notation & Pitch</h4>
-      <p>Music is written on a staff made up of five lines and four spaces. Notes are placed on these lines and spaces to indicate pitch. The clef determines what pitch is represented by each line and space.</p>
-      <ul>
-        <li><strong>Treble Clef:</strong> Common for higher-pitched instruments and voices (G clef).</li>
-        <li><strong>Bass Clef:</strong> Used for lower-pitched instruments and voices (F clef).</li>
-        <li><strong>Alto and Tenor Clefs:</strong> Used for instruments like the viola (C clefs).</li>
-      </ul>
-      <p><strong>Enharmonic Equivalents:</strong> Notes that sound the same but are written differently, like C# and Db.</p>
-      <p><strong>Ledger Lines:</strong> Short lines added above or below the staff to accommodate pitches that exceed the normal range.</p>
-      <audio controls src="audio/clefs_example.mp3">Your browser does not support the audio element.</audio>
-      <div class="quiz">
-        <h4>Quick Quiz:</h4>
-        <p>What clef is commonly used for viola?</p>
-        <ul>
-          <li>A) Treble Clef</li>
-          <li>B) Bass Clef</li>
-          <li><strong>C) Alto Clef</strong></li>
-          <li>D) Tenor Clef</li>
-        </ul>
-        <p><em>Answer: C) Alto Clef – it's centered on middle C and used by violas.</em></p>
-      </div>
-
-      <h4>B. Rhythm & Meter</h4>
-      <p>Rhythm is the organization of sound in time. Meter organizes beats into regular groupings, usually shown by a time signature.</p>
-      <ul>
-        <li><strong>Note and Rest Values:</strong> Whole, half, quarter, eighth, sixteenth, etc.</li>
-        <li><strong>Time Signatures:</strong> Top number = beats per measure; Bottom number = note value that gets the beat.</li>
-        <li><strong>Simple Meter:</strong> Beats divide into twos (e.g., 2/4, 3/4, 4/4).</li>
-        <li><strong>Compound Meter:</strong> Beats divide into threes (e.g., 6/8, 9/8).</li>
-        <li><strong>Irregular Meter:</strong> Uneven groupings (e.g., 5/8, 7/8).</li>
-        <li><strong>Syncopation:</strong> Emphasis on off-beats or weak parts of the beat.</li>
-        <li><strong>Ties and Dots:</strong> Extend the duration of a note.</li>
-      </ul>
-      <audio controls src="audio/rhythm_examples.mp3">Your browser does not support the audio element.</audio>
-      <div class="quiz">
-        <h4>Quick Quiz:</h4>
-        <p>Which time signature represents compound meter?</p>
-        <ul>
-          <li>A) 4/4</li>
-          <li><strong>B) 6/8</strong></li>
-          <li>C) 3/4</li>
-          <li>D) 2/4</li>
-        </ul>
-        <p><em>Answer: B) 6/8 – beats divide into three, making it compound.</em></p>
-      </div>
-    </div>
+    <ul>
+      <li><strong>Fundamentals of Music Notation:</strong> Staff, clefs (treble, bass, alto, tenor), note values, rests, ties, dots, time signatures (simple, compound, irregular), key signatures and the circle of fifths, accidentals</li>
+      <li><strong>Scales and Modes:</strong> Major, minor (natural, harmonic, melodic), chromatic, whole tone, and church modes (Dorian, Phrygian, etc.)</li>
+      <li><strong>Intervals:</strong> Naming, simple vs compound, inversion, enharmonic equivalents</li>
+      <li><strong>Chords and Harmony:</strong> Triads and seventh chords, roman numeral analysis, figured bass, lead sheet symbols</li>
+      <li><strong>Voice Leading and Part Writing:</strong> SATB, inversions, doubling, resolving dissonance, avoiding parallels</li>
+      <li><strong>Harmonic Progressions:</strong> Common progressions, cadences, non-chord tones (passing, neighbor, suspensions, etc.)</li>
+      <li><strong>Form and Analysis:</strong> Binary, ternary, rondo, sonata, phrase structures, motives, sequences</li>
+      <li><strong>Aural Skills:</strong> Interval/chord recognition, melodic/rhythmic dictation, sight singing</li>
+      <li><strong>Composition and Realization:</strong> Figured bass realization and writing short compositions</li>
+    </ul>
   </section>
 
-  <section id="appreciation">
+  <section id="appreciation" class="course">
     <h2>AP Music Appreciation</h2>
-    <!-- Music Appreciation content will go here after Theory is complete -->
+    <ul>
+      <li><strong>Elements of Music:</strong> Melody, harmony, rhythm, texture, form, dynamics, timbre, notation, instruments, and voice types</li>
+      <li><strong>Historical Periods:</strong> Middle Ages (chant), Renaissance (polyphony), Baroque (fugue, opera), Classical (form, clarity), Romantic (emotion, nationalism), Modern (atonality, jazz)</li>
+      <li><strong>World Music:</strong> African drumming, Indian raga, Gamelan, Native American music</li>
+      <li><strong>Music in Society:</strong> Religion, politics, entertainment, cultural function</li>
+      <li><strong>Listening Skills:</strong> Form/style recognition, instrument identification</li>
+    </ul>
   </section>
+
+  <section id="composition" class="course">
+    <h2>Music Composition</h2>
+    <ul>
+      <li><strong>Theory Foundations:</strong> Scales, chords, harmonic function, rhythm, counterpoint</li>
+      <li><strong>Melody Writing:</strong> Motivic development, repetition, phrase structures, contour</li>
+      <li><strong>Harmony/Accompaniment:</strong> Progressions, cadences, substitutions, textures</li>
+      <li><strong>Orchestration:</strong> Instrument ranges, transposition, ensemble writing</li>
+      <li><strong>Form:</strong> Binary, ternary, rondo, variations, sonata, film/game music structures</li>
+      <li><strong>Software:</strong> MuseScore, Sibelius, Finale, formatting scores and parts</li>
+      <li><strong>Analysis:</strong> Understanding structure, motifs, harmonic analysis</li>
+    </ul>
+  </section>
+
+  <section id="history" class="course">
+    <h2>Music History</h2>
+    <ul>
+      <li><strong>Western Periods:</strong> Medieval (chant, organum), Renaissance (polyphony), Baroque (opera, concerto), Classical (clarity, form), Romantic (emotion, program music), Modern (minimalism, electronic)</li>
+      <li><strong>Key Composers:</strong> Bach, Handel, Vivaldi, Mozart, Haydn, Beethoven, Chopin, Verdi, Brahms, Debussy, Stravinsky, Schoenberg, Copland</li>
+      <li><strong>Innovations:</strong> Instrument evolution, notation systems, tuning systems</li>
+      <li><strong>Context:</strong> Music and politics, religion, culture, patronage, Renaissance humanism</li>
+      <li><strong>Popular & World Influence:</strong> Folk music, jazz, rock, pop, genre crossover</li>
+    </ul>
+  </section>
+
+  <section id="performance" class="course">
+    <h2>Performance Resources</h2>
+    <ul>
+      <li><strong>Instrument Charts:</strong> Fingering charts and trill charts (if applicable)</li>
+      <li><strong>Maintenance:</strong> Instrument repair tips, cleaning, reed making (for woodwinds)</li>
+      <li><strong>Etude Books & Literature:</strong> Best etudes and solo pieces for each instrument</li>
+      <li><strong>Technique:</strong> Tone production, posture, embouchure, articulation tips</li>
+    </ul>
+  </section>
+
+  <footer>
+    Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a>
+  </footer>
+
 </body>
 </html>
