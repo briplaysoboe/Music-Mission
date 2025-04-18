@@ -1,0 +1,57 @@
+<!-- ap_music_theory.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Music Theory - Music Mission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Music Mission</a>
+            <ul>
+                <li><a href="ap_music_theory.html">AP Music Theory</a></li>
+                <li><a href="ap_music_appreciation.html">AP Music Appreciation</a></li>
+                <li><a href="music_composition.html">Music Composition</a></li>
+                <li><a href="music_history.html">Music History</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- AP Music Theory Page Content -->
+    <section id="ap-music-theory">
+        <h1>AP Music Theory</h1>
+
+        <h2>Fundamentals of Music Notation</h2>
+        <p>This section covers the basics of music notation...</p>
+
+        <h3>Staff, Clefs, and Notation</h3>
+        <p>Learn about different clefs (treble, bass, alto, tenor) and their corresponding staff notations...</p>
+        <!-- Add YouTube video embed here -->
+
+        <h2>Scales and Modes</h2>
+        <p>Understand the different types of scales: Major, minor, chromatic, and more...</p>
+
+        <h3>Major and Minor Scales</h3>
+        <p>Major scales and minor scales are fundamental to understanding music theory...</p>
+
+        <h2>Intervals</h2>
+        <p>Learn how to identify and construct intervals in both harmonic and melodic forms...</p>
+
+        <h3>Interval Identification</h3>
+        <p>Intervals are the building blocks of melody and harmony...</p>
+
+        <!-- Add quiz sections -->
+        <h2>Quiz</h2>
+        <p>Complete the following quiz to test your understanding...</p>
+
+        <footer>
+            <p>Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
+        </footer>
+    </section>
+</body>
+</html>
