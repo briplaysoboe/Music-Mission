@@ -1,76 +1,25 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en">
+<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Music Mission</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #2d2b2b;
-      color: #f8f4f0;
-    }header {
-  background-color: #3e3a39;
-  padding: 1rem;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: #fdd9a0;
-  cursor: pointer;
-}
-
-header p {
-  margin-top: 0.5rem;
-  font-style: italic;
-  font-size: 1rem;
-  color: #d9c3a1;
-}
-
-nav {
-  margin: 2rem auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.course-link {
-  background-color: #5e524d;
-  color: #f0e7d8;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.course-link:hover {
-  background-color: #7d6d65;
-}
-
-footer {
-  text-align: center;
-  margin-top: 3rem;
-  padding: 1rem;
-  background-color: #3e3a39;
-  color: #bfb2a9;
-}
-
-  </style>
-</head><body>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
   <header>
-    <h1 onclick="location.href='index.html'">Music Mission</h1>
+    <h1><a href="index.html">Music Mission</a></h1>
     <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
-  </header>  <nav>
-    <a href="ap-music-theory.html" class="course-link">AP Music Theory</a>
-    <a href="ap-music-appreciation.html" class="course-link">AP Music Appreciation</a>
-    <a href="music-composition.html" class="course-link">Music Composition</a>
-    <a href="music-history.html" class="course-link">Music History</a>
-    <a href="performance.html" class="course-link">Performance</a>
-  </nav>  <footer>
-    Contact: <a href="mailto:hautboisoboe10@gmail.com" style="color: #f0d4a4; text-decoration: none;">hautboisoboe10@gmail.com</a>
+  </header>  <main>
+    <h2>Select a Course</h2>
+    <ul>
+      <li><a href="ap-music-theory.html">AP Music Theory</a></li>
+      <li><a href="ap-music-appreciation.html">AP Music Appreciation</a></li>
+      <li><a href="music-composition.html">Music Composition</a></li>
+      <li><a href="music-history.html">Music History</a></li>
+      <li><a href="performance.html">Performance</a></li>
+    </ul>
+  </main>  <footer>
+    <p>Contact: <a href="mailto:hautboisoboe10@gmail.com">hautboisoboe10@gmail.com</a></p>
   </footer>
-</body></html>
+</body>
+</html>
