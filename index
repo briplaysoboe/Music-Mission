@@ -1,51 +1,76 @@
-// File: src/main.jsx import React from 'react'; import ReactDOM from 'react-dom/client'; import { BrowserRouter } from 'react-router-dom'; import App from './App'; import './index.css';
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2d2b2b;
+      color: #f8f4f0;
+    }header {
+  background-color: #3e3a39;
+  padding: 1rem;
+  text-align: center;
+}
 
-ReactDOM.createRoot(document.getElementById('root')).render( <React.StrictMode> <BrowserRouter> <App /> </BrowserRouter> </React.StrictMode> );
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fdd9a0;
+  cursor: pointer;
+}
 
-// File: src/App.jsx import { Routes, Route } from 'react-router-dom'; import Navbar from './components/Navbar'; import Footer from './components/Footer'; import Home from './pages/Home'; import Theory from './pages/Theory'; import Appreciation from './pages/Appreciation'; import Composition from './pages/Composition'; import History from './pages/History'; import Performance from './pages/Performance';
+header p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: #d9c3a1;
+}
 
-export default function App() { return ( <div className="bg-[#1b1a22] min-h-screen text-white"> <Navbar /> <main className="p-4"> <Routes> <Route path="/" element={<Home />} /> <Route path="/theory" element={<Theory />} /> <Route path="/appreciation" element={<Appreciation />} /> <Route path="/composition" element={<Composition />} /> <Route path="/history" element={<History />} /> <Route path="/performance" element={<Performance />} /> </Routes> </main> <Footer /> </div> ); }
+nav {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-// File: src/components/Navbar.jsx import { Link } from 'react-router-dom';
+.course-link {
+  background-color: #5e524d;
+  color: #f0e7d8;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
 
-export default function Navbar() { return ( <nav className="bg-[#2a2734] text-white p-4 flex justify-between items-center shadow-md"> <Link to="/" className="text-3xl font-bold hover:text-[#f2d3ab]">Music Mission</Link> <div className="space-x-4"> <Link to="/theory">Theory</Link> <Link to="/appreciation">Appreciation</Link> <Link to="/composition">Composition</Link> <Link to="/history">History</Link> <Link to="/performance">Performance</Link> </div> </nav> ); }
+.course-link:hover {
+  background-color: #7d6d65;
+}
 
-// File: src/components/Footer.jsx export default function Footer() { return ( <footer className="bg-[#2a2734] text-center text-sm text-gray-300 p-4 mt-8"> Contact: hautboisoboe10@gmail.com </footer> ); }
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #3e3a39;
+  color: #bfb2a9;
+}
 
-// File: src/pages/Home.jsx export default function Home() { return ( <div className="text-center p-8"> <h1 className="text-5xl font-bold mb-4">Music Mission</h1> <p className="text-lg italic text-[#f2d3ab]"> "Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature." </p> </div> ); }
-
-// PLACEHOLDER FILES FOR COURSE PAGES (fill these in as needed)
-
-// File: src/pages/Theory.jsx export default function Theory() { return <div><h2 className="text-2xl font-semibold mb-4">AP Music Theory</h2><p>[Detailed lessons here]</p></div>; }
-
-// File: src/pages/Appreciation.jsx export default function Appreciation() { return <div><h2 className="text-2xl font-semibold mb-4">AP Music Appreciation</h2><p>[Detailed lessons here]</p></div>; }
-
-// File: src/pages/Composition.jsx export default function Composition() { return <div><h2 className="text-2xl font-semibold mb-4">Music Composition</h2><p>[Detailed lessons here]</p></div>; }
-
-// File: src/pages/History.jsx export default function History() { return <div><h2 className="text-2xl font-semibold mb-4">Music History</h2><p>[Detailed lessons here]</p></div>; }
-
-// File: src/pages/Performance.jsx export default function Performance() { return <div><h2 className="text-2xl font-semibold mb-4">Performance</h2><p>[Instrument resources and guidance]</p></div>; }
-
-// File: index.html
-
-<!DOCTYPE html><html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Mission</title>
-  </head>
-  <body class="bg-[#1b1a22]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>// File: tailwind.config.js export default { content: [ "./index.html", "./src/**/*.{js,ts,jsx,tsx}", ], theme: { extend: {}, }, plugins: [], }
-
-// File: postcss.config.js export default { plugins: { tailwindcss: {}, autoprefixer: {}, }, }
-
-// File: vite.config.js import { defineConfig } from 'vite'; import react from '@vitejs/plugin-react';
-
-export default defineConfig({ plugins: [react()], });
-
-// File: src/index.css @tailwind base; @tailwind components; @tailwind utilities;
-
+  </style>
+</head><body>
+  <header>
+    <h1 onclick="location.href='index.html'">Music Mission</h1>
+    <p>"Deep understanding of music: its structure, backgrounds, evolution, creators, basic vocabulary and terminology, its schools and movements, and its literature."</p>
+  </header>  <nav>
+    <a href="ap-music-theory.html" class="course-link">AP Music Theory</a>
+    <a href="ap-music-appreciation.html" class="course-link">AP Music Appreciation</a>
+    <a href="music-composition.html" class="course-link">Music Composition</a>
+    <a href="music-history.html" class="course-link">Music History</a>
+    <a href="performance.html" class="course-link">Performance</a>
+  </nav>  <footer>
+    Contact: <a href="mailto:hautboisoboe10@gmail.com" style="color: #f0d4a4; text-decoration: none;">hautboisoboe10@gmail.com</a>
+  </footer>
+</body></html>
